@@ -1,3 +1,9 @@
+# 사용하는 기술
+* HTML
+* Styled-Components
+* Java Script [Es5/Es6]
+* React
+
 # 작업 진행 순서
 * UI요소를 먼저 작성 후 기능구현을 하는 순서로 작업을 진행합니다.
 
@@ -13,12 +19,6 @@
  3. TodoList - 할 일에 대한 정보가 들어있는 Todos라는 배열을 mapping 해서 여러개의 컴포넌트를 렌더링 하는 역할
  4. TodoItem - TodoList에 각 항목
  5. TodoCreate - 새로운 할 일을 등록할 수 있게 해주는 컴포넌트의 역할
-
-# 사용하는 기술
-* HTML
-* Styled-Components
-* Java Script [Es5/Es6]
-* React
 
 # 프로젝트 진행 간 알게 된 것들!
 
