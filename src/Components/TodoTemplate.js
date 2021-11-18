@@ -12,7 +12,7 @@ import styled from 'styled-components';
     position: relative;
 
     border-radius: 25px;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 0 8px rgba(0, 0, 0, 0.04);
 
     display: flex;
     flex-direction: column;
