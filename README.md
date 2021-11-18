@@ -36,3 +36,7 @@
 ![스크린샷 2021-11-17 오후 11 26 30](https://user-images.githubusercontent.com/89136968/142218952-0cf4c539-9345-4421-9b87-e1ebc27839b1.png)
 
 - src 폴더 하위에 Components 폴더 생성 후 만들 컴포넌트 순서에 따라 UI작성 후 기능 구현!
+
+- display가 flex인 상황에서 flex : 1 이란 값을 주게 되면 내가 차지 할 수 있는 면적을 전부 차지합니다.
+
+- overflow-y : auto 값을 주게 되면 항목이 많아지게 될때 y 축으로 스크롤이 자동으로 만들어집니다.
