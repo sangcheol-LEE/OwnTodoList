@@ -40,3 +40,11 @@
 - display가 flex인 상황에서 flex : 1 이란 값을 주게 되면 내가 차지 할 수 있는 면적을 전부 차지합니다.
 
 - overflow-y : auto 값을 주게 되면 항목이 많아지게 될때 y 축으로 스크롤이 자동으로 만들어집니다.
+
+- React-icons 사용법
+
+1. 사용하고 싶은 아이콘명을 import 해준다. import { MdDone , MdClose } from 'react-icons/md'
+
+- 스타일컴포넌트에서 컴포넌트 직접 관리하는 법
+  &:hover{
+  ${Remove} {} 와 같이 itemblock hover시, remove 컴포넌트에 무언가 변화를 줄 수 있다.

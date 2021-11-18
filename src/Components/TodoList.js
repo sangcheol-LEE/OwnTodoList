@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import TodoItem from './TodoItem';
 
 const TodoListBlock = styled.section` 
   flex: 1; //TodoTemplate에서 먹인 display:flex 
@@ -12,7 +13,11 @@ const TodoListBlock = styled.section`
 const TodoList = () => {
   return (
     <TodoListBlock>
-      TodoList
+
+      <TodoItem text="프로젝트 생성하기" done={true} />
+      <TodoItem text="컴포넌트 스타일링하기" done={true} />
+      <TodoItem text="기능 구현하기" done={false} />
+
     </TodoListBlock>
   )
 }
