@@ -11,7 +11,7 @@ import styled from 'styled-components';
     margin-bottom: 30px;
     position: relative;
 
-    border-radius: 25px;
+    border-radius: 16px;
     box-shadow:0 0 8px rgba(0, 0, 0, 0.04);
 
     display: flex;
