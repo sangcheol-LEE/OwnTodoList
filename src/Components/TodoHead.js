@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState,useEffect } from 'react';
 import styled from 'styled-components';
 
 const TodoHeadBlock = styled.header`
@@ -33,11 +33,35 @@ const TodoHeadBlock = styled.header`
 `;
 
 const TodoHead = () => {
+
+  const [day,setDay] = useState({
+    year: "",
+    month:"",
+    date:"",
+    day :"",
+
+  })
+
+  
+
+  useEffect(() => {
+    const date = new Date();
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    setDay({
+      year: date.getFullYear(),
+      month: date.getMonth()+1,
+      date: date.getDate(),
+      day: days[date.getDay()]
+
+    })
+
+  },[])
+
   return (
     <TodoHeadBlock>
       <div>
-      <h1>2021년 11월 18일</h1>
-      <div className="day">THURSDAY</div>
+      <h1>{`${day.year}년 ${day.month}월 ${day.date}일`}</h1>
+      <div className="day">{day.day}</div>
       </div>
       <div className="howManyTodo">할 일 2개 남음</div>
     </TodoHeadBlock>

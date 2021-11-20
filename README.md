@@ -29,6 +29,12 @@
 4.  TodoItem - TodoList에 각 항목
 5.  TodoCreate - 새로운 할 일을 등록할 수 있게 해주는 컴포넌트의 역할
 
+# 구현해야 할 기능
+
+- 헤더에 있는 날짜와 요일이 매일 바뀌어야 함
+- 할 일이 몇개 남아있는지 갯수가 변경 되어야 함
+- TodoList에 할 일 목록이 추가 삭제 수정 되어야 함
+
 # 프로젝트 진행 간 알게 된 것들!
 
 - styledComponent로 body에 globalStyle 먹이기

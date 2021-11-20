@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { createGlobalStyle } from 'styled-components';
 import TodoTemplate from "./Components/TodoTemplate";
 import TodoHead from "./Components/TodoHead";
@@ -16,13 +16,20 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = ({children}) => {
+
+
+  
+
+
   return (
     <>
       <GlobalStyle />
       <TodoTemplate>
         <TodoHead/>
-        <TodoList/>
-        <TodoCreate/>
+        <TodoList 
+          />
+        <TodoCreate 
+          />
       </TodoTemplate>
     </>
   );
