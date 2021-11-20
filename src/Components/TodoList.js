@@ -10,9 +10,11 @@ const TodoListBlock = styled.section`
   overflow-y : auto; // 항목이 많아지게 되면 스크롤바를 보여준다.
 `;
 
-const TodoList = () => {
+const TodoList = ({toDos,open}) => {
+  console.log("toDos",toDos)
   return (
     <TodoListBlock>
+      
 
       <TodoItem text="프로젝트 생성하기" done={true} />
       <TodoItem text="컴포넌트 스타일링하기" done={true} />
