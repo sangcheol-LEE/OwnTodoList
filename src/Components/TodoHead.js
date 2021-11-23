@@ -1,5 +1,6 @@
 import React,{ useState,useEffect } from 'react';
 import styled from 'styled-components';
+import { useTodoState } from '../TodoContext';
 
 const TodoHeadBlock = styled.header`
   padding: 48px 32px 24px 32px;
@@ -33,6 +34,8 @@ const TodoHeadBlock = styled.header`
 `;
 
 const TodoHead = () => {
+  const todos = useTodoState();
+  const undoneTasks = todos.filter(todo => !todo.done);
 
   const [day,setDay] = useState({
     year: "",
@@ -63,7 +66,7 @@ const TodoHead = () => {
       <h1>{`${day.year}년 ${day.month}월 ${day.date}일`}</h1>
       <div className="day">{day.day}</div>
       </div>
-      <div className="howManyTodo">할 일 2개 남음</div>
+      <div className="howManyTodo">할 일 {undoneTasks.length}개 남음</div>
     </TodoHeadBlock>
   )
 }
